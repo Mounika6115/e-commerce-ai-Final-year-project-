@@ -1,0 +1,94 @@
+{
+  "user_62f1b652": [
+    {
+      "id": "req_f585c0fc",
+      "fromId": "user_48e2603f",
+      "fromName": "Priya Mehta",
+      "fromAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=priya",
+      "status": "accepted",
+      "timestamp": "2026-02-19T03:39:51.258868"
+    },
+    {
+      "id": "req_9fb27ee4",
+      "fromId": "user_38ca9ce7",
+      "fromName": "Harshit",
+      "fromAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=harshit123",
+      "status": "accepted",
+      "timestamp": "2026-02-22T12:05:42.077827"
+    },
+    {
+      "id": "req_3fae9106",
+      "fromId": "user_4e987a16",
+      "fromName": "Gorle Mounika",
+      "fromAvatar": "/api/profile-image/ff0ace501bcc4912/profile.jpg",
+      "status": "pending",
+      "timestamp": "2026-09-22T07:45:33.561723"
+    }
+  ],
+  "user_48e2603f": [
+    {
+      "id": "req_948ce522",
+      "fromId": "user_62f1b652",
+      "fromName": "Riya Sharma",
+      "fromAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=riya",
+      "status": "accepted",
+      "mirrorTo": "user_62f1b652",
+      "timestamp": "2026-02-19T03:40:06.583436"
+    },
+    {
+      "id": "req_784dcad1",
+      "fromId": "user_38ca9ce7",
+      "fromName": "Harshit",
+      "fromAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=harshit123",
+      "status": "pending",
+      "timestamp": "2026-02-22T12:05:45.155282"
+    }
+  ],
+  "user_dec02026": [
+    {
+      "id": "req_0ce85780",
+      "fromId": "user_62f1b652",
+      "fromName": "Riya Sharma",
+      "fromAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=riya",
+      "status": "pending",
+      "timestamp": "2026-02-19T15:30:13.581239"
+    },
+    {
+      "id": "req_1c371950",
+      "fromId": "user_38ca9ce7",
+      "fromName": "Harshit",
+      "fromAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=harshit123",
+      "status": "pending",
+      "timestamp": "2026-02-22T12:05:44.021405"
+    },
+    {
+      "id": "req_c102b773",
+      "fromId": "user_4e987a16",
+      "fromName": "Gorle Mounika",
+      "fromAvatar": "/api/profile-image/ff0ace501bcc4912/profile.jpg",
+      "status": "pending",
+      "timestamp": "2026-09-22T07:45:31.475205"
+    }
+  ],
+  "user_944ada46": [
+    {
+      "id": "req_89791b10",
+      "fromId": "user_38ca9ce7",
+      "fromName": "Harshit",
+      "fromAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=harshit123",
+      "status": "pending",
+      "timestamp": "2026-02-22T12:05:46.265012"
+    }
+  ],
+  "user_38ca9ce7": [
+    {
+      "id": "req_188611d3",
+      "fromId": "user_62f1b652",
+      "fromName": "Riya Sharma",
+      "fromAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=riya",
+      "status": "accepted",
+      "mirrorTo": "user_62f1b652",
+      "timestamp": "2026-02-22T12:06:10.803431"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Social AI E-Commerce Academic Prototype",
+  "description": "A modern e-commerce platform featuring an explainable AI recommendation engine and real-time social shopping features, designed as an academic prototype.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

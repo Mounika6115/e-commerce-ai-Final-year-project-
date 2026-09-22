@@ -1,0 +1,39 @@
+{
+  "ja-3cf84e": [
+    {
+      "id": "rev_7f4c6296",
+      "productId": "ja-3cf84e",
+      "userId": "admin_1",
+      "username": "admin",
+      "name": "Administrator",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=admin",
+      "rating": 3,
+      "text": "good",
+      "date": "2026-02-21T06:48:06.077399",
+      "isFake": false
+    },
+    {
+      "id": "rev_c1504bdd",
+      "productId": "ja-3cf84e",
+      "userId": "user_48e2603f",
+      "username": "priya",
+      "name": "Priya Mehta",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=priya",
+      "rating": 5,
+      "text": "Nice shoes",
+      "date": "2026-02-19T15:35:37.446184",
+      "isFake": false
+    },
+    {
+      "id": "rev_3735b0ae",
+      "productId": "ja-3cf84e",
+      "userId": "user_62f1b652",
+      "username": "riya",
+      "name": "Riya Sharma",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=riya",
+      "rating": 3,
+      "text": "Great Fit",
+      "date": "2026-02-19T03:25:38.408528"
+    }
+  ]
+}

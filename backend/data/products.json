@@ -1,0 +1,493 @@
+[
+  {
+    "id": "ja-0c07a6",
+    "name": "Moto Rebel Leather Jacket",
+    "category": "Jackets",
+    "price": 4299,
+    "images": [
+      "/api/images/Jackets/ja-0c07a6/ja-0c07a6-0.webp"
+    ],
+    "description": "Genuine leather biker jacket with asymmetric zip and quilted lining. Built for the road and the runway.",
+    "rating": 4.8,
+    "popularityScore": 0.93,
+    "createdAt": "2026-02-19T03:01:14.715992",
+    "stock": 10
+  },
+  {
+    "id": "ja-df3b37",
+    "name": "Urban Street Puffer Jacket",
+    "category": "Jackets",
+    "price": 2799,
+    "images": [
+      "/api/images/Jackets/ja-df3b37/ja-df3b37-0.webp"
+    ],
+    "description": "Lightweight puffer with water-resistant shell, perfect for city commutes in 2026 winters.",
+    "rating": 4.6,
+    "popularityScore": 0.87,
+    "createdAt": "2026-02-19T03:01:14.720179",
+    "stock": 10
+  },
+  {
+    "id": "ja-3cf84e",
+    "name": "Alpine Trek Windbreaker",
+    "category": "Jackets",
+    "price": 3199,
+    "images": [
+      "/api/images/Jackets/ja-3cf84e/ja-3cf84e-0.webp"
+    ],
+    "description": "Technical windbreaker with ventilated back and packable hood, ready for any terrain.",
+    "rating": 4.7,
+    "popularityScore": 0.82,
+    "createdAt": "2026-02-19T03:01:14.723819",
+    "stock": 8
+  },
+  {
+    "id": "ja-36543f",
+    "name": "Classic Bomber Heritage Jacket",
+    "category": "Jackets",
+    "price": 3699,
+    "images": [
+      "/api/images/Jackets/ja-36543f/ja-36543f-0.webp"
+    ],
+    "description": "Timeless MA-1 bomber in premium nylon. An icon reimagined for 2026 streetwear.",
+    "rating": 4.7,
+    "popularityScore": 0.91,
+    "createdAt": "2026-02-19T03:01:14.726901",
+    "stock": 10
+  },
+  {
+    "id": "ja-3d10b2",
+    "name": "Harvest Gold Blazer Jacket",
+    "category": "Jackets",
+    "price": 2499,
+    "images": [
+      "/api/images/Jackets/ja-3d10b2/ja-3d10b2-0.webp"
+    ],
+    "description": "Bold mustard-yellow blazer cut for slim profiles. Stand out at every event this season.",
+    "rating": 4.4,
+    "popularityScore": 0.79,
+    "createdAt": "2026-02-19T03:01:14.730452",
+    "stock": 10
+  },
+  {
+    "id": "li-de50d6",
+    "name": "Rosewood Romance Matte Lipstick",
+    "category": "Lipsticks",
+    "price": 899,
+    "images": [
+      "/api/images/Lipsticks/li-de50d6/li-de50d6-0.webp"
+    ],
+    "description": "Warm rosewood matte liquid lipstick with up to 16-hour wear and a velvety soft finish.",
+    "rating": 4.7,
+    "popularityScore": 0.88,
+    "createdAt": "2026-02-19T03:01:14.735002",
+    "stock": 10
+  },
+  {
+    "id": "li-d5ceb8",
+    "name": "Berry Bliss Velvet Lipstick",
+    "category": "Lipsticks",
+    "price": 1050,
+    "images": [
+      "/api/images/Lipsticks/li-d5ceb8/li-d5ceb8-0.webp"
+    ],
+    "description": "Deep berry velvet formula enriched with hyaluronic acid for plump, hydrated lips all day.",
+    "rating": 4.8,
+    "popularityScore": 0.92,
+    "createdAt": "2026-02-19T03:01:14.738616",
+    "stock": 10
+  },
+  {
+    "id": "li-26eb10",
+    "name": "Baby Pink Satin Lip Colour",
+    "category": "Lipsticks",
+    "price": 749,
+    "images": [
+      "/api/images/Lipsticks/li-26eb10/li-26eb10-0.webp"
+    ],
+    "description": "Sheer baby-pink satin lipstick, ultra-glossy and perfect for everyday feminine elegance.",
+    "rating": 4.6,
+    "popularityScore": 0.85,
+    "createdAt": "2026-02-19T03:01:14.741474",
+    "stock": 10
+  },
+  {
+    "id": "li-7596b4",
+    "name": "Scarlet Affair Matte Set",
+    "category": "Lipsticks",
+    "price": 1499,
+    "images": [
+      "/api/images/Lipsticks/li-7596b4/li-7596b4-0.webp"
+    ],
+    "description": "Iconic red matte lipstick set — power on your lips, confidence in your stride.",
+    "rating": 4.9,
+    "popularityScore": 0.97,
+    "createdAt": "2026-02-19T03:01:14.744897",
+    "stock": 10
+  },
+  {
+    "id": "li-e571b9",
+    "name": "Luxe Spectrum Lipstick Collection",
+    "category": "Lipsticks",
+    "price": 2199,
+    "images": [
+      "/api/images/Lipsticks/li-e571b9/li-e571b9-0.webp"
+    ],
+    "description": "A curated multi-shade collection spanning nudes, corals and bold berries. Gift-ready packaging.",
+    "rating": 4.8,
+    "popularityScore": 0.94,
+    "createdAt": "2026-02-19T03:01:14.750415",
+    "stock": 10
+  },
+  {
+    "id": "li-6159ee",
+    "name": "Crimson Vortex Bold Lipstick",
+    "category": "Lipsticks",
+    "price": 1250,
+    "images": [
+      "/api/images/Lipsticks/li-6159ee/li-6159ee-0.webp"
+    ],
+    "description": "AR-Ready bold crimson matte finish. Smudge-proof, feather-proof, confidence-proof.",
+    "rating": 4.9,
+    "popularityScore": 0.98,
+    "createdAt": "2026-02-19T03:01:14.754037",
+    "stock": 10
+  },
+  {
+    "id": "li-c63392",
+    "name": "Prism 7-Shade Lip Kit",
+    "category": "Lipsticks",
+    "price": 2999,
+    "images": [
+      "/api/images/Lipsticks/li-c63392/li-c63392-0.webp"
+    ],
+    "description": "Complete 7-shade kit from barely-there nudes to dramatic darks. One kit, infinite looks.",
+    "rating": 4.7,
+    "popularityScore": 0.9,
+    "createdAt": "2026-02-19T03:01:14.758327",
+    "stock": 10
+  },
+  {
+    "id": "sh-71812b",
+    "name": "Clean Slate White Casual Shirt",
+    "category": "Shirts",
+    "price": 1199,
+    "images": [
+      "/api/images/Shirts/sh-71812b/sh-71812b-0.webp"
+    ],
+    "description": "Essential white cotton shirt with a clean minimal design. The perfect blank canvas.",
+    "rating": 4.5,
+    "popularityScore": 0.8,
+    "createdAt": "2026-02-19T03:01:14.761693",
+    "stock": 10
+  },
+  {
+    "id": "sh-396135",
+    "name": "Island Bloom Hawaiian Shirt",
+    "category": "Shirts",
+    "price": 1599,
+    "images": [
+      "/api/images/Shirts/sh-396135/sh-396135-0.webp"
+    ],
+    "description": "Vibrant floral-print camp collar shirt in breathable rayon. Summer vibes, 2026 edition.",
+    "rating": 4.4,
+    "popularityScore": 0.77,
+    "createdAt": "2026-02-19T03:01:14.764872",
+    "stock": 10
+  },
+  {
+    "id": "sh-08d931",
+    "name": "Street Edge Grey T-Shirt",
+    "category": "Shirts",
+    "price": 799,
+    "images": [
+      "/api/images/Shirts/sh-08d931/sh-08d931-0.webp"
+    ],
+    "description": "Premium combed cotton grey tee with a relaxed fit. Layer it, style it, own it.",
+    "rating": 4.3,
+    "popularityScore": 0.73,
+    "createdAt": "2026-02-19T03:01:14.768462",
+    "stock": 10
+  },
+  {
+    "id": "sh-d935c1",
+    "name": "Metro Elite Fashion Shirt",
+    "category": "Shirts",
+    "price": 1899,
+    "images": [
+      "/api/images/Shirts/sh-d935c1/sh-d935c1-0.webp"
+    ],
+    "description": "Sharp-cut fashion shirt with subtle texture weave. Board-room to bar — effortless.",
+    "rating": 4.6,
+    "popularityScore": 0.86,
+    "createdAt": "2026-02-19T03:01:14.772873",
+    "stock": 10
+  },
+  {
+    "id": "sh-7bb8a6",
+    "name": "Minimal Touch Linen Shirt",
+    "category": "Shirts",
+    "price": 1499,
+    "images": [
+      "/api/images/Shirts/sh-7bb8a6/sh-7bb8a6-0.webp"
+    ],
+    "description": "100% linen short-sleeve shirt. Breathes as you move, wrinkles that look intentional.",
+    "rating": 4.5,
+    "popularityScore": 0.82,
+    "createdAt": "2026-02-19T03:01:14.776364",
+    "stock": 10
+  },
+  {
+    "id": "sh-860660",
+    "name": "Classic Oxford Premium Shirt",
+    "category": "Shirts",
+    "price": 2199,
+    "images": [
+      "/api/images/Shirts/sh-860660/sh-860660-0.webp"
+    ],
+    "description": "Oxford weave button-down in premium cotton — the cornerstone of every wardrobe.",
+    "rating": 4.7,
+    "popularityScore": 0.89,
+    "createdAt": "2026-02-19T03:01:14.779793",
+    "stock": 10
+  },
+  {
+    "id": "sh-5c8491",
+    "name": "Heritage Stripe Cotton Shirt",
+    "category": "Shirts",
+    "price": 1699,
+    "images": [
+      "/api/images/Shirts/sh-5c8491/sh-5c8491-0.webp"
+    ],
+    "description": "Classic Bengal-stripe shirt in two-ply cotton. Crisp, clean and timeless.",
+    "rating": 4.4,
+    "popularityScore": 0.78,
+    "createdAt": "2026-02-19T03:01:14.783734",
+    "stock": 10
+  },
+  {
+    "id": "sh-2e3ae7",
+    "name": "Everyday Flex Casual Shirt",
+    "category": "Shirts",
+    "price": 1099,
+    "images": [
+      "/api/images/Shirts/sh-2e3ae7/sh-2e3ae7-0.webp"
+    ],
+    "description": "Stretch-cotton casual shirt with a modern slim cut. Made for those always on the move.",
+    "rating": 4.3,
+    "popularityScore": 0.74,
+    "createdAt": "2026-02-19T03:01:14.787394",
+    "stock": 10
+  },
+  {
+    "id": "sh-a99c53",
+    "name": "Cocoa Craft Leather Oxford",
+    "category": "Shoes",
+    "price": 4999,
+    "images": [
+      "/api/images/Shoes/sh-a99c53/sh-a99c53-0.webp"
+    ],
+    "description": "Hand-crafted full-grain leather oxford in rich cocoa brown. Ageless elegance, modern comfort.",
+    "rating": 4.8,
+    "popularityScore": 0.92,
+    "createdAt": "2026-02-19T03:01:14.792151",
+    "stock": 10
+  },
+  {
+    "id": "sh-bcc432",
+    "name": "Air Sprint Running Shoes",
+    "category": "Shoes",
+    "price": 5499,
+    "images": [
+      "/api/images/Shoes/sh-bcc432/sh-bcc432-0.webp"
+    ],
+    "description": "Responsive foam midsole with a breathable mesh upper. Engineered for personal bests.",
+    "rating": 4.7,
+    "popularityScore": 0.9,
+    "createdAt": "2026-02-19T03:01:14.795341",
+    "stock": 10
+  },
+  {
+    "id": "sh-1eb7d0",
+    "name": "Tempo Street Sneakers",
+    "category": "Shoes",
+    "price": 3799,
+    "images": [
+      "/api/images/Shoes/sh-1eb7d0/sh-1eb7d0-0.webp"
+    ],
+    "description": "Street-ready sneakers with chunky sole and retro tooling. The 2026 silhouette you need.",
+    "rating": 4.6,
+    "popularityScore": 0.87,
+    "createdAt": "2026-02-19T03:01:14.798728",
+    "stock": 10
+  },
+  {
+    "id": "sh-2a0fd1",
+    "name": "Vogue Edge Platform Shoes",
+    "category": "Shoes",
+    "price": 3299,
+    "images": [
+      "/api/images/Shoes/sh-2a0fd1/sh-2a0fd1-0.webp"
+    ],
+    "description": "Bold platform silhouette that adds height and attitude. Fashion-forward for every occasion.",
+    "rating": 4.5,
+    "popularityScore": 0.83,
+    "createdAt": "2026-02-19T03:01:14.802444",
+    "stock": 10
+  },
+  {
+    "id": "sh-0a3f30",
+    "name": "Executive Classic Derby Shoes",
+    "category": "Shoes",
+    "price": 5999,
+    "images": [
+      "/api/images/Shoes/sh-0a3f30/sh-0a3f30-0.webp"
+    ],
+    "description": "Premium Goodyear-welted derby in smooth calfskin. Boardroom to gala — boardroom wins.",
+    "rating": 4.9,
+    "popularityScore": 0.95,
+    "createdAt": "2026-02-19T03:01:14.805791",
+    "stock": 10
+  },
+  {
+    "id": "sh-cc065d",
+    "name": "BlueZone Performance Runners",
+    "category": "Shoes",
+    "price": 4299,
+    "images": [
+      "/api/images/Shoes/sh-cc065d/sh-cc065d-0.webp"
+    ],
+    "description": "Electric-blue run shoe with carbon-infused plate for explosive energy return.",
+    "rating": 4.7,
+    "popularityScore": 0.89,
+    "createdAt": "2026-02-19T03:01:14.808921",
+    "stock": 10
+  },
+  {
+    "id": "sh-1b58b1",
+    "name": "Urban Trail Trekking Shoes",
+    "category": "Shoes",
+    "price": 3599,
+    "images": [
+      "/api/images/Shoes/sh-1b58b1/sh-1b58b1-0.webp"
+    ],
+    "description": "Hybrid trail-to-street shoe with grip outsole and waterproof membrane.",
+    "rating": 4.5,
+    "popularityScore": 0.84,
+    "createdAt": "2026-02-19T03:01:14.812728",
+    "stock": 10
+  },
+  {
+    "id": "sh-3c003f",
+    "name": "Essential Everyday Canvas Shoes",
+    "category": "Shoes",
+    "price": 1499,
+    "images": [
+      "/api/images/Shoes/sh-3c003f/sh-3c003f-0.webp"
+    ],
+    "description": "Classic canvas sneaker in pure white. Simple, clean and perpetually cool.",
+    "rating": 4.3,
+    "popularityScore": 0.76,
+    "createdAt": "2026-02-19T03:01:14.815935",
+    "stock": 10
+  },
+  {
+    "id": "su-94769d",
+    "name": "Infinity Shield Sport Glasses",
+    "category": "Sunglasses",
+    "price": 2999,
+    "images": [
+      "/api/images/Sunglasses/su-94769d/su-94769d-0.webp"
+    ],
+    "description": "Wraparound sport lens with TR90 frame and UV400 protection. Built for speed.",
+    "rating": 4.6,
+    "popularityScore": 0.86,
+    "createdAt": "2026-02-19T03:01:14.819315",
+    "stock": 10
+  },
+  {
+    "id": "su-8e2b04",
+    "name": "Neo Pilot Classic Sunglasses",
+    "category": "Sunglasses",
+    "price": 2499,
+    "images": [
+      "/api/images/Sunglasses/su-8e2b04/su-8e2b04-0.webp"
+    ],
+    "description": "Iconic pilot frame in polished gunmetal with polarized gradient lenses.",
+    "rating": 4.7,
+    "popularityScore": 0.88,
+    "createdAt": "2026-02-19T03:01:14.822399",
+    "stock": 10
+  },
+  {
+    "id": "su-d1f2f9",
+    "name": "Titanium Frame Aviator Shades",
+    "category": "Sunglasses",
+    "price": 3499,
+    "images": [
+      "/api/images/Sunglasses/su-d1f2f9/su-d1f2f9-0.webp"
+    ],
+    "description": "Feather-light titanium aviator with photochromic grey lenses — clarity in all conditions.",
+    "rating": 4.8,
+    "popularityScore": 0.93,
+    "createdAt": "2026-02-19T03:01:14.825446",
+    "stock": 9
+  },
+  {
+    "id": "su-934001",
+    "name": "Rosé Bloom Fashion Shades",
+    "category": "Sunglasses",
+    "price": 1999,
+    "images": [
+      "/api/images/Sunglasses/su-934001/su-934001-0.webp"
+    ],
+    "description": "Chic cat-eye frames in blush pink with rose-tinted lenses — effortlessly feminine.",
+    "rating": 4.5,
+    "popularityScore": 0.81,
+    "createdAt": "2026-02-19T03:01:14.829307",
+    "stock": 10
+  },
+  {
+    "id": "su-5b129a",
+    "name": "Cyclone Sport Shield Goggles",
+    "category": "Sunglasses",
+    "price": 2199,
+    "images": [
+      "/api/images/Sunglasses/su-5b129a/su-5b129a-0.webp"
+    ],
+    "description": "Full-coverage shield goggle with anti-fog ventilation. Cycling, skiing or just looking fierce.",
+    "rating": 4.6,
+    "popularityScore": 0.84,
+    "createdAt": "2026-02-19T03:01:14.833014",
+    "stock": 10
+  },
+  {
+    "id": "su-662b00",
+    "name": "Noir Eclipse Aviator Shades",
+    "category": "Sunglasses",
+    "price": 2699,
+    "images": [
+      "/api/images/Sunglasses/su-662b00/su-662b00-0.webp"
+    ],
+    "description": "All-black matte aviator with clear-to-dark photochromic lenses. Night mode activated.",
+    "rating": 4.7,
+    "popularityScore": 0.9,
+    "createdAt": "2026-02-19T03:01:14.836032",
+    "stock": 10
+  },
+  {
+    "id": "su-89ba4f",
+    "name": "Thug Life Goggles",
+    "category": "Sunglasses",
+    "price": 700.0,
+    "images": [
+      "/api/images/Sunglasses/su-89ba4f/su-89ba4f-0.webp"
+    ],
+    "description": "This project explores the intersection of internet subculture and physical fashion. By translating the famous 8-bit \"Thug Life\" meme into a tangible accessory, this piece serves as a wearable statement on digital identity and retro-gaming aesthetics.",
+    "rating": 4.5,
+    "stock": 10,
+    "subcategory": "",
+    "popularityScore": 0.79,
+    "createdAt": "2026-03-01T03:19:26.517209"
+  }
+]

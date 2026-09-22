@@ -1,0 +1,130 @@
+{
+  "user_48e2603f__user_62f1b652": [
+    {
+      "id": "msg_9d8e9ce8",
+      "senderId": "user_62f1b652",
+      "type": "product",
+      "text": "Check out: Cyclone Sport Shield Goggles",
+      "product": {
+        "category": "Sunglasses",
+        "createdAt": "2026-02-19T03:01:14.833014",
+        "description": "Full-coverage shield goggle with anti-fog ventilation. Cycling, skiing or just looking fierce.",
+        "id": "su-5b129a",
+        "images": [
+          "/api/images/Sunglasses/su-5b129a/su-5b129a-0.webp"
+        ],
+        "name": "Cyclone Sport Shield Goggles",
+        "popularityScore": 0.84,
+        "price": 2199,
+        "rating": 4.6,
+        "image": "/api/images/Sunglasses/su-5b129a/su-5b129a-0.webp"
+      },
+      "timestamp": "2026-02-19T03:40:20.833729"
+    },
+    {
+      "id": "msg_a563e20c",
+      "senderId": "user_62f1b652",
+      "type": "text",
+      "text": "Hey do you like this goggles?",
+      "product": null,
+      "timestamp": "2026-02-19T03:40:34.016555"
+    },
+    {
+      "id": "msg_bbe08a79",
+      "senderId": "user_48e2603f",
+      "type": "text",
+      "text": "Looks Good",
+      "product": null,
+      "timestamp": "2026-02-19T03:41:06.327381"
+    },
+    {
+      "id": "msg_afda1107",
+      "senderId": "user_62f1b652",
+      "type": "text",
+      "text": "Nice",
+      "product": null,
+      "timestamp": "2026-02-19T03:48:07.906677"
+    },
+    {
+      "id": "msg_0a814183",
+      "senderId": "user_62f1b652",
+      "type": "product",
+      "text": "Check out: Rosé Bloom Fashion Shades",
+      "product": {
+        "category": "Sunglasses",
+        "createdAt": "2026-02-19T03:01:14.829307",
+        "description": "Chic cat-eye frames in blush pink with rose-tinted lenses — effortlessly feminine.",
+        "id": "su-934001",
+        "images": [
+          "/api/images/Sunglasses/su-934001/su-934001-0.webp"
+        ],
+        "name": "Rosé Bloom Fashion Shades",
+        "popularityScore": 0.81,
+        "price": 1999,
+        "rating": 4.5,
+        "image": "/api/images/Sunglasses/su-934001/su-934001-0.webp"
+      },
+      "timestamp": "2026-02-19T15:30:41.603082"
+    },
+    {
+      "id": "msg_3b3f2da1",
+      "senderId": "user_62f1b652",
+      "type": "text",
+      "text": "Hey",
+      "product": null,
+      "timestamp": "2026-02-19T15:30:46.351661"
+    },
+    {
+      "id": "msg_c28779bf",
+      "senderId": "user_62f1b652",
+      "type": "product",
+      "text": "Check out: Everyday Flex Casual Shirt",
+      "product": {
+        "category": "Shirts",
+        "createdAt": "2026-02-19T03:01:14.787394",
+        "description": "Stretch-cotton casual shirt with a modern slim cut. Made for those always on the move.",
+        "id": "sh-2e3ae7",
+        "images": [
+          "/api/images/Shirts/sh-2e3ae7/sh-2e3ae7-0.webp"
+        ],
+        "name": "Everyday Flex Casual Shirt",
+        "popularityScore": 0.74,
+        "price": 1099,
+        "rating": 4.3,
+        "image": "/api/images/Shirts/sh-2e3ae7/sh-2e3ae7-0.webp"
+      },
+      "timestamp": "2026-02-22T12:04:23.326750"
+    }
+  ],
+  "user_38ca9ce7__user_62f1b652": [
+    {
+      "id": "msg_2ba0057b",
+      "senderId": "user_62f1b652",
+      "type": "product",
+      "text": "Check out: Classic Bomber Heritage Jacket",
+      "product": {
+        "category": "Jackets",
+        "createdAt": "2026-02-19T03:01:14.726901",
+        "description": "Timeless MA-1 bomber in premium nylon. An icon reimagined for 2026 streetwear.",
+        "id": "ja-36543f",
+        "images": [
+          "/api/images/Jackets/ja-36543f/ja-36543f-0.webp"
+        ],
+        "name": "Classic Bomber Heritage Jacket",
+        "popularityScore": 0.91,
+        "price": 3699,
+        "rating": 4.7,
+        "image": "/api/images/Jackets/ja-36543f/ja-36543f-0.webp"
+      },
+      "timestamp": "2026-02-22T12:06:17.176397"
+    },
+    {
+      "id": "msg_a70c7a04",
+      "senderId": "user_62f1b652",
+      "type": "text",
+      "text": "Hey",
+      "product": null,
+      "timestamp": "2026-02-22T12:06:19.707781"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AR Try-On — SmartShop</title>
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-face-aframe.prod.js"></script>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{width:100%;height:100%;overflow:hidden;background:#000;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    #loading-overlay{
+      position:fixed;inset:0;z-index:10000;background:#0b0b12;
+      display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;
+      transition:opacity .5s;
+    }
+    #loading-overlay.hidden{opacity:0;pointer-events:none}
+    .spinner{width:52px;height:52px;border:4px solid rgba(255,255,255,.1);border-top-color:#818cf8;border-radius:50%;animation:spin .85s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    #loading-overlay p{color:rgba(255,255,255,.7);font-size:14px;text-align:center}
+    #loading-overlay small{color:rgba(255,255,255,.4);font-size:11px}
+    #error-overlay{
+      position:fixed;inset:0;z-index:10001;background:#0b0b12;
+      display:none;flex-direction:column;align-items:center;justify-content:center;
+      gap:16px;padding:24px;text-align:center;
+    }
+    #error-overlay h2{color:#fff;font-size:20px;font-weight:700}
+    #error-overlay p{color:rgba(255,255,255,.55);font-size:14px;max-width:320px}
+    #error-overlay button{margin-top:8px;background:#818cf8;color:#fff;padding:12px 28px;border-radius:50px;font-weight:700;font-size:14px;border:none;cursor:pointer}
+    #switcher{
+      position:fixed;bottom:0;left:0;right:0;z-index:9999;
+      padding:12px 12px 20px;
+      background:linear-gradient(0deg,rgba(0,0,0,.75) 0%,transparent 100%);
+      display:flex;gap:8px;justify-content:center;flex-wrap:wrap;
+    }
+    .model-btn{
+      background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.25);
+      color:#fff;padding:8px 16px;border-radius:50px;cursor:pointer;
+      font-size:13px;font-weight:700;backdrop-filter:blur(8px);
+      transition:background .2s,border-color .2s;white-space:nowrap;
+    }
+    .model-btn.active{background:rgba(129,140,248,.45);border-color:#818cf8;box-shadow:0 0 12px rgba(129,140,248,.5)}
+    .model-btn:hover:not(.active){background:rgba(255,255,255,.22)}
+    #hint{
+      position:fixed;top:60px;left:50%;transform:translateX(-50%);z-index:9999;
+      background:rgba(0,0,0,.55);backdrop-filter:blur(8px);color:#fff;
+      font-size:12px;padding:7px 18px;border-radius:50px;
+      border:1px solid rgba(255,255,255,.18);white-space:nowrap;
+      pointer-events:none;opacity:1;transition:opacity 1.5s;
+    }
+    #hint.fade{opacity:0}
+    /* MindAR injects a <video> behind the canvas — must be visible */
+    video {
+      position: fixed !important;
+      top: 0 !important; left: 0 !important;
+      width: 100% !important; height: 100% !important;
+      object-fit: cover !important;
+      z-index: 0 !important;
+    }
+    /* A-Frame canvas must sit above the video but be transparent */
+    canvas.a-canvas {
+      position: fixed !important;
+      top: 0 !important; left: 0 !important;
+      z-index: 1 !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="loading-overlay">
+    <div class="spinner"></div>
+    <p>Starting camera &amp; face tracking&#8230;</p>
+    <small>Allow camera access when prompted</small>
+  </div>
+
+  <div id="error-overlay">
+    <div style="font-size:52px">&#128247;</div>
+    <h2>Camera Access Required</h2>
+    <p>Allow camera access in your browser settings, then reload.</p>
+    <button onclick="location.reload()">Reload &amp; Allow</button>
+  </div>
+
+  <a-scene
+    id="ar-scene"
+    mindar-face="autoStart: true;"
+    color-space="sRGB"
+    renderer="alpha: true; colorManagement: true"
+    vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false"
+  >
+    <a-camera active="false"></a-camera>
+    <a-entity mindar-face-target="anchorIndex: 168">
+      <a-gltf-model
+        id="glasses"
+        src=""
+        position="0 0.1 0.05"
+        scale="0.65 0.65 0.65"
+        rotation="0 0 0"
+      ></a-gltf-model>
+    </a-entity>
+    <!-- Lights: keep intensity moderate to avoid blowing out materials -->
+    <a-light type="ambient" color="#ffffff" intensity="0.5"></a-light>
+    <a-light type="directional" color="#ffffff" intensity="0.35" position="0 2 2"></a-light>
+  </a-scene>
+
+  <div id="hint">&#128083; Look straight into the camera</div>
+  <div id="switcher"></div>
+
+  <script>
+    var params = new URLSearchParams(location.search);
+    var modelUrls = params.getAll('model');
+    var modelLabels = params.getAll('label');
+    var emojis = ['&#x1F97D;','&#x1F576;&#xFE0F;','&#x1F60E;','&#x2728;','&#x1F48E;'];
+
+    if (!modelUrls.length) {
+      modelUrls = ['/api/models/aviation_goggles_revised.glb'];
+      modelLabels = ['Aviation Goggles'];
+    }
+
+    // Per-model transform overrides — each GLB has different internal scale/origin.
+    // Values center each model on the nose-bridge anchor at ~0.15m real-world width
+    // and lift it slightly forward so it sits on the face.
+    var modelTransforms = {
+      'aviation_goggles_revised.glb':
+        { scale: '2.2 2.2 2.2', position: '0 -1.47 0.05', rotation: '0 0 0' },
+      'futuristic_glasses__super_sun_glasses__goggles.glb':
+        { scale: '0.17 0.17 0.17', position: '0 -0.015 0.045', rotation: '0 0 0' },
+      'thug_life__cool_glasses__stylise_goggles.glb':
+        { scale: '0.0027 0.0027 0.0027', position: '0 0.006 0.105', rotation: '0 0 0' },
+    };
+    // Exact center offsets over the geometry's origin (already folded into position above;
+    // kept here for the fallback path when no filename matches).
+    var modelDefaults = { scale: '0.85 0.85 0.85', position: '0 0 0.05', rotation: '0 0 0' };
+
+    function getTransform(url) {
+      var filename = url.split('/').pop();
+      return modelTransforms[filename] || modelDefaults;
+    }
+
+    var glassesEl = document.getElementById('glasses');
+    var L = document.getElementById('loading-overlay');
+    var E = document.getElementById('error-overlay');
+    var S = document.getElementById('ar-scene');
+
+    function switchModel(idx) {
+      var t = getTransform(modelUrls[idx]);
+      glassesEl.setAttribute('scale', t.scale);
+      glassesEl.setAttribute('position', t.position);
+      glassesEl.setAttribute('rotation', t.rotation);
+      glassesEl.setAttribute('src', modelUrls[idx]);
+      document.querySelectorAll('.model-btn').forEach(function(b, i) {
+        b.classList.toggle('active', i === idx);
+      });
+    }
+
+    // Build switcher buttons
+    var switcher = document.getElementById('switcher');
+    modelUrls.forEach(function(url, i) {
+      var btn = document.createElement('button');
+      btn.className = 'model-btn' + (i === 0 ? ' active' : '');
+      btn.innerHTML = emojis[i % emojis.length] + ' ' + (modelLabels[i] || 'Style ' + (i + 1));
+      btn.onclick = function() { switchModel(i); };
+      switcher.appendChild(btn);
+    });
+
+    // Set first model after A-Frame scene is initialised (not before)
+    S.addEventListener('loaded', function() {
+      var t = getTransform(modelUrls[0]);
+      glassesEl.setAttribute('scale', t.scale);
+      glassesEl.setAttribute('position', t.position);
+      glassesEl.setAttribute('rotation', t.rotation);
+      glassesEl.setAttribute('src', modelUrls[0]);
+    });
+
+    S.addEventListener('arReady', function() {
+      L.classList.add('hidden');
+      setTimeout(function() { document.getElementById('hint').classList.add('fade'); }, 4000);
+    });
+
+    S.addEventListener('arError', function() {
+      L.classList.add('hidden');
+      E.style.display = 'flex';
+    });
+
+    // Safety timeout — remove loader after 20s regardless
+    setTimeout(function() { L.classList.add('hidden'); }, 20000);
+  </script>
+
+</body>
+</html>

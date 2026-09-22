@@ -1,0 +1,100 @@
+[
+  {
+    "id": "user_62f1b652",
+    "name": "Riya Sharma",
+    "username": "riya",
+    "email": "riya@smartshop.ai",
+    "password": "bc97aaa7b5bde4bae9d3b658e6d4bf711b2d8bb5d7a27f17e95815efc6e0618d",
+    "role": "user",
+    "avatar": "/api/profile-image/141b8b0d3cfc4218/profile.webp",
+    "createdAt": "2026-02-19T03:01:14.841632",
+    "profileImageCode": "141b8b0d3cfc4218",
+    "skinTone": "Medium"
+  },
+  {
+    "id": "user_dec02026",
+    "name": "Arjun Patel",
+    "username": "arjun",
+    "email": "arjun@smartshop.ai",
+    "password": "572350dbd3dca1b229beee04f34710f1b9c0b71bb1da4ba8fda3161a85109a73",
+    "role": "user",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=arjun",
+    "createdAt": "2026-02-19T03:01:14.841855"
+  },
+  {
+    "id": "user_48e2603f",
+    "name": "Priya Mehta",
+    "username": "priya",
+    "email": "priya@smartshop.ai",
+    "password": "13b2b29e0fa61007da8d0184e785c50506cf739986a670687a929e10cd4ed1bf",
+    "role": "user",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=priya",
+    "createdAt": "2026-02-19T03:01:14.842057"
+  },
+  {
+    "id": "user_944ada46",
+    "name": "Kabir Khan",
+    "username": "kabir",
+    "email": "kabir@smartshop.ai",
+    "password": "81e503518bcb52a6668ecce34a42096fcfd818fa5a4f9acf1092f089cd4800a9",
+    "role": "user",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=kabir",
+    "createdAt": "2026-02-19T03:01:14.842243"
+  },
+  {
+    "id": "user_9fd4c93d",
+    "name": "Sneha Reddy",
+    "username": "sneha",
+    "email": "sneha@smartshop.ai",
+    "password": "59b6bc9484a2c8ea7c20a3c0778088295e6f8e62a6a90b6d535b3b6bceb2fcd0",
+    "role": "user",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=sneha",
+    "createdAt": "2026-02-19T03:01:14.842409"
+  },
+  {
+    "id": "admin_1",
+    "name": "Administrator",
+    "username": "admin",
+    "email": "admin@smartshop.ai",
+    "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+    "role": "admin",
+    "avatar": "/api/profile-image/7978a779cf954104/profile.jpg",
+    "createdAt": "2026-02-19T03:08:49.590491",
+    "profileImageCode": "7978a779cf954104",
+    "skinTone": "Medium"
+  },
+  {
+    "id": "user_38ca9ce7",
+    "name": "Harshit",
+    "username": "harshit123",
+    "email": "harshit123@gmail.com",
+    "password": "4556adb007e4ce66e61472c7efb149b0e64b90489fa018d8abe8bb1b8a8c4dfd",
+    "role": "user",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=harshit123",
+    "createdAt": "2026-02-22T12:05:34.508789"
+  },
+  {
+    "id": "user_cc01ac1f",
+    "name": "Vamsi",
+    "username": "vamsi@123",
+    "email": "vamsi@gmail.com",
+    "password": "f4260d0257e6fe570b1926a528edcb7c49fd1f84ab290028603b8a6459213be7",
+    "role": "user",
+    "avatar": "/api/profile-image/e6169f3ad5834b8c/profile.jpg",
+    "skinTone": "Medium",
+    "createdAt": "2026-02-24T10:54:20.425849",
+    "profileImageCode": "e6169f3ad5834b8c"
+  },
+  {
+    "id": "user_4e987a16",
+    "name": "Gorle Mounika",
+    "username": "mouni",
+    "email": "gorlemounika18@gmail.com",
+    "password": "7ae28bb6e29355bc3795acbb18f9494ae840b5e2e63bfdb0827683ca0e054562",
+    "role": "user",
+    "avatar": "/api/profile-image/ff0ace501bcc4912/profile.jpg",
+    "skinTone": "Fair",
+    "createdAt": "2026-09-07T00:40:20.323468",
+    "profileImageCode": "ff0ace501bcc4912"
+  }
+]

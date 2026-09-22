@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Jackets",
+    "code": "jackets",
+    "logoUrl": "https://cdn-icons-png.flaticon.com/512/3534/3534312.png"
+  },
+  {
+    "name": "Lipsticks",
+    "code": "lipsticks",
+    "logoUrl": "https://cdn-icons-png.flaticon.com/512/1944/1944299.png"
+  },
+  {
+    "name": "Shirts",
+    "code": "shirts",
+    "logoUrl": "https://cdn-icons-png.flaticon.com/512/2357/2357127.png"
+  },
+  {
+    "name": "Shoes",
+    "code": "shoes",
+    "logoUrl": "https://cdn-icons-png.flaticon.com/512/2742/2742674.png"
+  },
+  {
+    "name": "Sunglasses",
+    "code": "sunglasses",
+    "logoUrl": "https://cdn-icons-png.flaticon.com/512/624/624467.png"
+  }
+]
